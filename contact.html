@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>North Star Bakery - Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Moon+Dance&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/bakery-logo_c.png" alt="North Star Bakery logo" width="300">
+        <br>
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a> | 
+            <a href="products.html">Products</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+<br>
+    <main>
+        <!--One image with meaningful alt text-->
+        <img src="images/bakery-bread_c.png" alt="Display of our bread loaves" width="400">
+    <h1>Contact & Pre-Orders</h1>
+
+    <!-- Inquiry and pre order request form -->
+    <form action="#" method="post">
+    <fieldset>
+        <legend>Pre-Order & Contact Request</legend>
+        
+        <p>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required>
+        </p>
+
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="request-type">Request Type:</label><br>
+            <select id="request-type" name="request-type" required>
+                <option value="">--Please choose an option--</option>
+                <option value="pre-order">Pre-Order</option>
+                <option value="general">General Question</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="pickup-date">Requested Pickup Date:</label><br>
+            <input type="date" id="pickup-date" name="pickup-date" required>
+        </p>
+
+        <p>
+            <label for="item-details">Item Details (Names & Quantities):</label><br>
+            <textarea id="item-details" name="item-details" rows="3" placeholder="e.g., 1x Sourdough Loaf, 6x Baklava" required></textarea>
+        </p>
+
+        <p>
+            <label for="allergy-notes">Allergy Notes (if applicable):</label><br>
+            <textarea id="allergy-notes" name="allergy-notes" rows="2" placeholder="Let us know about any dietary restrictions..."></textarea>
+        </p>
+        
+        <button type="submit">Submit Request</button>
+    </fieldset>
+</form>
+
+    <!-- Hours of operation -->
+    <section>
+        <h2>Hours of Operation</h2>
+        <p>
+            Monday – Friday: 7am – 3pm<br>
+            Saturday: 8am – 2pm<br>
+            Sunday: Closed
+        </p>
+    </section>
+
+    <!-- Location information -->
+    <section>
+        <h2>Location</h2>
+        <p>
+            123 Cannoli Lane<br>
+            Biscotti, Pennsylvania
+        </p>
+    </section>
+</main>
+<footer>
+    <nav aria-label="Footer Navigation">
+            <a href="index.html">Home</a> | 
+            <a href="products.html">Products</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p>&copy; 2026 North Star Bakery</p>
+    </footer>
+
+</body>
+</html>
