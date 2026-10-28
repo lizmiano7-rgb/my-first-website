@@ -123,10 +123,9 @@ fieldset {
     }
 }
 @media (max-width: 768px) {
-    /*for mobile*/
     nav a {
-        font-size: 1.3rem;      
-        padding: 10px 12px;     
-        display: inline-block;
+        font-size: 1.4rem !important;
+        padding: 12px 16px !important;
+        display: inline-block !important;
     }
 }
