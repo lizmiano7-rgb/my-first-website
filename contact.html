@@ -28,10 +28,10 @@
     <h1>Contact & Pre-Orders</h1>
 
     <!-- Inquiry and pre order request form -->
-    <form action="#" method="post">
+    <form action="#" method="post" novalidate>
     <fieldset>
         <legend>Pre-Order & Contact Request</legend>
-        
+        <div id="form-error" style="color: red; font-weight: bold; margin-bottom: 15px;"></div>
         <p>
             <label for="name">Full Name:</label><br>
             <input type="text" id="name" name="name" required>
@@ -98,6 +98,42 @@
         </nav>
         <p>&copy; 2026 North Star Bakery</p>
     </footer>
+<script>
+    const contactForm = document.querySelector("form");
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const errorBox = document.getElementById("form-error");
+
+    contactForm.addEventListener("submit", function(event) {
+        // stop the default form submission so the page doesn't crash locally
+        event.preventDefault();
+        
+        // clear previous messages
+        errorBox.innerText = "";
+        
+        let errors = [];
+
+        // name length check
+        if (nameInput.value.trim().length < 2) {
+            errors.push("Please enter a valid full name (at least 2 characters).");
+        }
+
+        // email format check
+        if (!emailInput.value.includes("@") || !emailInput.value.includes(".")) {
+            errors.push("Please enter a valid email address (including '@' and a domain).");
+        }
+
+        // errors display red, success displays green
+        if (errors.length > 0) {
+            errorBox.style.color = "red";
+            errorBox.innerText = errors.join(" ");
+        } else {
+            errorBox.style.color = "green";
+            errorBox.innerText = "Success! Your pre-order request has been validated and submitted.";
+            
+        }
+    });
+</script>
 
 </body>
 </html>

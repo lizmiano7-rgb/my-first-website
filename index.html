@@ -36,6 +36,20 @@
             <h1>Featured Item of the Week</h1>
             <p>Luxe Meyer Lemon Bar</p>
         </section>
+        <section class="seasonal-feature"> <!-- Semantic tag for the whole section -->
+    <h2>Baker's Seasonal Special</h2>
+    
+    <label for="flavor-select">Explore our seasonal treats:</label>
+    <select id="flavor-select">
+        <option value="">-- Choose a Flavor --</option>
+        <option value="horchata">Horchata Cinnamon Roll</option>
+        <option value="pumpkin-maple">Pumpkin Maple Scone</option>
+        <option value="cranberry-orange">Cranberry Orange Tart</option>
+        <option value="lemon-bar">Luxe Meyer Lemon Bar</option>
+    </select>
+
+    <div id="flavor-result"></div> <!-- Perfect use of <div> for JS targeting! -->
+</section>
         <!-- Hours and location snippet -->
         <section>
             <h2>Hours</h2>
@@ -64,6 +78,6 @@
         </nav>
         <p>&copy; 2026 North Star Bakery</p>
     </footer>
-
+<script src="javascript/script.js"></script>
 </body>
 </html>
